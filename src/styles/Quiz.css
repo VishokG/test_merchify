@@ -1,0 +1,167 @@
+.submitted_container {
+    align-items: baseline;
+    height: 100vh;
+    background-color: var(--bground);
+}
+
+.submitted {
+    margin-top: 200px;
+    text-align: center;
+    border: solid 1px var(--purple);
+    height: 200px;
+    width: 80%;
+    border-radius: 7.5px;
+    color: var(--fcolor);
+    font-weight: 700;
+}
+
+.submission_score {
+    margin-top: 10px;
+}
+
+.quiz_container {
+    height: 100vh;
+    background-color: var(--bground);
+}
+
+.quiz_comp {
+    height: 80%;
+}
+
+.top_bar {
+    /* height: 200px; */
+    margin-bottom: 100px;
+    width: 80vw;/*media*/
+    justify-content: space-around;
+}
+
+.question_index {
+    background-color: var(--lightgreen);
+}
+
+.timer {
+    background-color: var(--lightpurple);
+}
+
+.top_style {
+    font-size: .9rem;
+    height: 22.5px;
+    color: white;
+    border-radius: 30px;
+    width: 60px;
+}
+
+.question_sec {
+    width: 40%;
+    color: var(--fcolor);
+    padding: 30px;
+    border: solid 2px;
+    border-radius: 8px;
+    border-color: var(--purple);
+    background-color: var(--bground);
+    height: 400px;
+    justify-content: space-between;
+}
+
+.q_title {
+    /* border: solid 1px black; */
+    padding-top: 5px;
+    width: 100%;
+}
+
+.form_sec {
+    /* border: solid 1px black; */
+    height: 250px;
+    width: 100%;
+}
+
+.options {
+    width: 100%;
+}
+
+.q_option {
+    margin-bottom: 15px;
+    background-color: white;
+    height: 45px;
+    justify-content: space-between;
+    padding-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 0.5px lightgrey;
+}
+
+.option_label {
+    margin-left: 15px;
+    width: 100%;
+}
+
+.quiz_submit {
+    margin-top: 10px;
+    height: 30px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--purple);
+    color: white;
+    font-weight: 900;
+}
+
+.radio {
+    float: right;
+}
+
+input[type='radio'] {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    outline: none;
+    border: 1px solid gray;
+}
+
+input[type='radio']:before {
+    content: '';
+    display: block;
+    width: 70%;
+    height: 70%;
+    margin: 2px auto;
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked:before {
+    background: var(--lightgreen);
+    
+}
+
+input[type="radio"]:checked {
+  border-color:var(--lightgreen);
+}
+
+@media (max-width: 900px) {
+    .quiz_comp {
+        width: 60vw;
+    }
+
+    .question_sec {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .quiz_comp {
+        width: 80vw;
+    }
+
+    .question_sec {
+        width: 90%;
+    }
+}
+
+@media (max-width: 400px) {
+    .quiz_comp {
+        width: 91vw;
+    }
+
+    .question_sec {
+        width: 90%;
+    }
+}
