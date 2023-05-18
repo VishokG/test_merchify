@@ -60,3 +60,5 @@ export const questions = [
         ans: 3
     },
 ];
+
+export const length = questions.length;

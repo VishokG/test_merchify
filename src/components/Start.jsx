@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { length } from '../data/questions';
 import "../styles/Start.css"
 
 function Start() {
@@ -20,7 +21,7 @@ function Start() {
 					
 					<ul className="details">
 						<li className="point">1 minute</li>
-						<li className="point">5 Questions</li>
+						<li className="point">{length} Questions</li>
 						<li className="point">1 Attempt</li>
 					</ul>
 					<Link to={"/quiz"}><button className="start_btn">Take Quiz</button></Link>
